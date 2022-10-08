@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://yohanbornes.fr/wp-content/BlackJack/style.css" rel="stylesheet">
+    <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js" defer></script> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://yohanbornes.fr/wp-content/BlackJack/Card.js" defer></script>
+    <script src="https://yohanbornes.fr/wp-content/BlackJack/Deck.js" defer></script>
+    <script src="https://yohanbornes.fr/wp-content/BlackJack/Bank.js" defer></script>
+    <script src="https://yohanbornes.fr/wp-content/BlackJack/Player.js" defer></script>
+    <script src="https://yohanbornes.fr/wp-content/BlackJack/Game.js" defer></script>
+    <script src="https://yohanbornes.fr/wp-content/BlackJack/script.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+</head>
+
+<body id="body">
+    <h1>BlackJack</h1>
+    <div id="playingArea">
+        <div class="cardSetA">
+            <div class="box">
+                <div id="leftA">
+                    <h2>Bank playing cards : <span id="bankLevel">0 </span></h2>
+                    <p> Bank money : <span id="bankMoney">100</span> </p>
+                </div>
+                <div id="rightA">
+                    <div id="bankCardArea"></div>
+                </div>
+            </div>
+            <div id="infoArea">
+                <div class="box">
+                    <div id="left">
+                        <h1>Turn : </h1>
+                        <p>
+                            <button id="doubleBetBtn">Double the bet</button>
+                            <button id="confirmBtn">Confirm cards</button>
+                            <button id="playBtn">Play</button>
+                            <div id="betBtn">
+                                <p>BET</p>
+                            </div>
+
+                        </p>
+                    </div>
+                    <div id="middle">
+                        <h1>Round <span id="round">1</span></h1>
+                        <div id="bankText"></div>
+                    </div>
+                    <div id="right">
+                        <div id="drawBtn">
+                            <img class="pickCard reverse" src="https://yohanbornes.fr/wp-content/BlackJack/Flat-Playing-Cards-Set/Back Covers/Sun Flower.png">
+                            <p>Draw card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardSetA">
+                <div class="box">
+                    <div id="leftA">
+                        <h2>Your playing cards : <span id="yourLevel">0 </span></h2>
+                        <p>Your money : <span id="yourMoney">100</span></p>
+                        <p>Current bet : <span id="yourBet">0</span> </p>
+                    </div>
+                    <div id="rightA">
+                        <div id="playerCardArea"></div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

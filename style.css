@@ -1,0 +1,239 @@
+body {
+    background-color : #000000;
+    transition: 0.8s;
+}
+
+h1{
+    display: none;
+    margin-left : 40px;
+    color : white;    
+    font-size : 60px;
+    text-transform: uppercase;
+    border : 4px solid white;
+    border-radius: 2px;
+    width : 40%;
+    text-align: center;
+    margin : auto;
+    margin-top : 40px;
+    padding-left : 10px;
+    padding-right: 10px;
+}
+
+/* Set */
+#playingArea {
+    margin-top : 40px;
+    margin-left : 40px;
+    margin-right : 40px;
+    border-radius : 4px;
+    border : 8px double #017646;
+    background-color : #00a061;
+    border-radius: 8px;
+    text-align : center;
+    padding : 40px;
+}
+
+#playingArea p {
+    color : black;
+}
+
+#playingArea button {
+    padding : 20px;
+}
+
+.cardSetA {
+    border : 4px double rgb(165, 165, 165);
+    background-color : #35a878;
+}
+
+.cardSetA h2 {
+    font-size : 20px;
+    background-color : white;
+    margin : 0px;
+    /* margin-top : 0px; */
+    /* margin-bottom : 40px; */
+}
+.cardSetA #leftA {
+    margin-right: 10%;
+    border-right : 2px solid black;
+}
+.cardSetA .box {
+    display: flex;
+  }
+
+.cardSetA .box #leftA {
+   width : 30%;
+   background-color :rgb(41, 198, 138);
+}
+
+.cardSetA .box #rightA {
+    padding-top: 10px;
+ }
+
+#playerCardArea {
+    margin : auto;
+    text-align : center;
+}
+#infoArea {
+    border : 4px double rgb(165, 165, 165);
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    /* margin : auto; */
+    /* margin-top : 20px;
+    margin-bottom : 20px; */
+    background-color : #017646;
+}
+
+#infoArea button {
+    display : none;
+    font-size: 16px;
+    font-weight : bold;
+    color : black;
+    text-align : center;
+    margin : auto;
+    width : 60%;
+    border-radius : 4px;
+    cursor : pointer;
+    margin-bottom : 10px;
+}
+
+#infoArea #doubleBetBtn {
+    margin-top : 10px;
+}
+#infoArea #betValue {
+    width : 60%;
+    margin : auto;
+    text-align : center;
+    border : 2px solid black;
+}
+
+#infoArea button:hover {
+    display : none;
+    box-shadow : -2px 2px 5px 0px  black;
+}
+#infoArea #playBtn, #infoArea #betBtn {
+    display : block;   
+}
+
+#infoArea #playBtn {
+    margin-top: 20px;
+    width: 50%;
+}
+
+#betBtn{
+    background-color : rgb(233, 233, 27);
+    padding : 10px;
+    margin : auto;
+    width : 14%;
+    border-radius : 100%;
+    border : 4px solid blanchedalmond;
+    cursor : pointer;
+}
+#betBtn:hover{
+    box-shadow : -2px 2px 5px 0px  black;
+}
+#infoArea .box {
+    display: flex;
+}
+
+#infoArea .box #left {
+    width: 30%;
+    background-color : rgb(41, 198, 138);
+    border-right: 2px solid black;
+}
+#infoArea .box #middle {
+    width: 50%;
+}
+#infoArea .box #right {
+    width: 20%;
+    display: block;
+    background-color : rgb(41, 198, 138);
+    padding-top : 20px;
+    padding-bottom : 20px;
+    border-left: 2px solid black;
+
+}
+
+#infoArea .pickCard {
+    margin-top : 40px;
+    vertical-align : bottom;
+    width : 50px;
+    position : relative;
+    top : 0px;
+    transition : 0.3s;
+    box-shadow: 
+        0px 0px 6px 0px rgb(0, 0, 0), 0px 0px white,
+        0px 0px 0px 0px rgb(8, 8, 8), 2px -2px white,
+        4px -4px 0px 0px rgb(186, 186, 186), 4px -4px white;
+    border : 1px solid black;
+    cursor : pointer;
+}
+
+#infoArea .pickCard:hover {
+    scale : 10px;
+    box-shadow: 
+        0px 0px 6px 0px rgb(0, 0, 0), 0px 0px white,
+        0px 0px 0px 0px rgb(8, 8, 8), 4px -4px white,
+        6px -6px 0px 0px rgb(186, 186, 186), 6px -6px white;
+}
+
+#infoArea #middle h1 {
+    display : block;
+    border : none;
+    box-shadow: 0px 0px 10px 10px beige;
+    text-align : center;
+    margin-top : 60px;
+    color : white;
+}
+
+/* Event info */
+#yourMoney, #bankMoney, #yourBet{
+    background-color: beige;
+    padding : 10px;
+    border-radius : 10px;
+    border : 1px solid rgb(193, 193, 193);
+    display : block;
+    width: 50%;
+    margin : auto;
+    margin-bottom: 20px;
+}
+
+
+#bankText{
+    font-size: 26px;
+    color : green;
+    background : white;
+    width : 40%;
+    margin : auto;
+    margin-top: 20px;
+    border : 4px solid green;
+    border-radius: 4px;
+    padding : 2px;
+    display: none;
+}
+/* Card */
+
+#cardReverse {
+    display : inline;
+}
+.card{
+    border : 2px solid;
+    border-radius: 4px;
+    width : 100px;
+    position : relative;
+    top : 0px;
+    transition : 0.3s;
+    display: inline;
+    margin-right : 5px;
+}
+
+.card:hover {
+    top : -10px;
+    transition: 0.4s;
+}
+.Diamonds, .Hearts{ 
+    border-color: red; }
+
+.Clubs, .Spades { border-color: black;}
+
+.reverse { border : 2px dotted rgb(212, 212, 212); }
